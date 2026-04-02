@@ -187,7 +187,7 @@ const Hero = () => {
         </div>
         
         <h1 className="w-full max-w-[1100px] mx-auto text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase italic leading-[0.85] mb-10 flex flex-col items-center">
-          <span className="block overflow-hidden px-2">
+          <span className="block overflow-hidden px-[0.18em] -mx-[0.18em]">
             <motion.span
               initial={{ y: "115%", opacity: 0 }}
               animate={{ y: "0%", opacity: 1 }}
@@ -197,7 +197,7 @@ const Hero = () => {
               Where sound
             </motion.span>
           </span>
-          <span className="block overflow-hidden px-2">
+          <span className="block overflow-hidden px-[0.18em] -mx-[0.18em]">
             <motion.span
               initial={{ y: "115%", opacity: 0 }}
               animate={{ y: "0%", opacity: 1 }}
