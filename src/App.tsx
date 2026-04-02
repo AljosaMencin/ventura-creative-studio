@@ -416,7 +416,7 @@ const CTA = () => {
       <div className="absolute inset-0 bg-neon-green/5 opacity-50" />
       <div className="max-w-4xl mx-auto relative z-10">
         <h2 className="text-5xl md:text-8xl font-black tracking-tighter uppercase italic mb-8 leading-none">
-          Stop releasing good music with <span className="text-neon-green">bad visuals.</span>
+          Start realasing GOOD music with <span className="text-neon-green">GOOD visuals.</span>
         </h2>
         <motion.button 
           whileHover={{ scale: 1.05 }}
