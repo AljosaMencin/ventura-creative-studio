@@ -114,9 +114,9 @@ const Navbar = () => {
               {item}
             </a>
           ))}
-          <button className="px-5 py-2 bg-white text-black text-xs font-bold uppercase tracking-widest hover:bg-neon-green transition-all duration-300 neon-glow">
+          <a href="https://tally.so/r/1AvJ6g" target="_blank" rel="noreferrer" className="px-5 py-2 bg-white text-black text-xs font-bold uppercase tracking-widest hover:bg-neon-green transition-all duration-300 neon-glow">
             Start Project
-          </button>
+          </a>
         </div>
 
         <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -175,12 +175,12 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-          <button className="group relative px-8 py-4 bg-neon-green text-black font-bold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95">
+          <a href="https://tally.so/r/1AvJ6g" target="_blank" rel="noreferrer" className="group relative px-8 py-4 bg-neon-green text-black font-bold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95">
             <span className="relative z-10 flex items-center gap-2">
               Start your project <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-          </button>
+          </a>
           
           <button className="px-8 py-4 border border-white/20 hover:border-neon-green text-white font-bold uppercase tracking-widest transition-all duration-300 hover:bg-white/5">
             View work
@@ -423,13 +423,16 @@ const CTA = () => {
           <span className="font-medium text-white">WITH</span>
           <span className="font-black text-neon-green">GOOD VISUALS</span>
         </h2>
-        <motion.button 
+        <motion.a
+          href="https://tally.so/r/1AvJ6g"
+          target="_blank"
+          rel="noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="px-12 py-6 bg-white text-black font-black uppercase tracking-[0.2em] text-lg hover:bg-neon-green transition-colors duration-300 neon-glow"
         >
           Work with Ventura
-        </motion.button>
+        </motion.a>
       </div>
     </section>
   );
