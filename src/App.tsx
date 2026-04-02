@@ -418,9 +418,9 @@ const CTA = () => {
       <div className="absolute inset-0 bg-neon-green/5 opacity-50" />
       <div className="layout-container max-w-4xl relative z-10">
         <h2 className="text-5xl md:text-8xl tracking-tighter uppercase italic mb-8 leading-none flex flex-col items-center">
-          <span className="font-black text-white">START RELEASING</span>
+          <span className="font-medium text-white">START RELEASING</span>
           <span className="font-black text-neon-green">GOOD MUSIC</span>
-          <span className="font-black text-white">WITH</span>
+          <span className="font-medium text-white">WITH</span>
           <span className="font-black text-neon-green">GOOD VISUALS</span>
         </h2>
         <motion.button 
