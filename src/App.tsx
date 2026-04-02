@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { cn } from './lib/utils';
 import innerCircleCover from './assets/inner-circle-cover.png';
+import veLogo from './assets/ve-logo.png';
 
 // --- Components ---
 
@@ -480,13 +481,13 @@ const CTA = () => {
 const Footer = () => {
   return (
     <footer className="py-20 border-t border-white/10 bg-black">
-      <div className="layout-container flex flex-col items-center gap-12 text-center">
+      <div className="layout-container flex flex-col items-center gap-10 text-center">
         <div className="text-center flex flex-col items-center">
           <span className="text-3xl font-black tracking-tighter uppercase italic text-neon-green stretched-text mb-4 block">
             Ventura
           </span>
           <p className="text-white/40 text-sm max-w-md">
-            A movement for artists who care about how their music looks. Based in Berlin. Available worldwide.
+            A movement for artists who care about how their music looks. Based in Ljubljana. Available worldwide.
           </p>
         </div>
 
@@ -498,10 +499,12 @@ const Footer = () => {
 
         <div className="text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-white/40 mb-2">Inquiries</p>
-          <a href="mailto:hello@ventura.studio" className="text-lg font-bold text-white hover:text-neon-green transition-colors">
-            hello@ventura.studio
+          <a href="mailto:venturadesigns01@gmail.com" className="text-lg font-bold text-white hover:text-neon-green transition-colors">
+            venturadesigns01@gmail.com
           </a>
         </div>
+
+        <img src={veLogo} alt="VE logo" className="w-24 h-24 object-contain" />
       </div>
       <div className="layout-container mt-20 pt-8 border-t border-white/5 flex flex-col items-center gap-2 text-[10px] uppercase tracking-widest text-white/20 text-center">
         <p>© 2026 Ventura Creative Studio</p>
