@@ -449,7 +449,7 @@ const Footer = () => {
         </div>
 
         <div className="flex gap-8">
-          <a href="#" className="text-white/60 hover:text-neon-green transition-colors"><Instagram /></a>
+          <a href="https://www.instagram.com/ventura.zip/" target="_blank" rel="noreferrer" className="text-white/60 hover:text-neon-green transition-colors"><Instagram /></a>
           <a href="#" className="text-white/60 hover:text-neon-green transition-colors"><Twitter /></a>
           <a href="#" className="text-white/60 hover:text-neon-green transition-colors"><Music /></a>
         </div>
