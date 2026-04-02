@@ -187,8 +187,26 @@ const Hero = () => {
         </div>
         
         <h1 className="w-full max-w-[1100px] mx-auto text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase italic leading-[0.85] mb-10 flex flex-col items-center">
-          <span className="block text-white">Where sound</span>
-          <span className="block text-neon-green neon-text-glow">meets vision.</span>
+          <span className="block overflow-hidden">
+            <motion.span
+              initial={{ y: "115%", opacity: 0 }}
+              animate={{ y: "0%", opacity: 1 }}
+              transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
+              className="block text-white"
+            >
+              Where sound
+            </motion.span>
+          </span>
+          <span className="block overflow-hidden">
+            <motion.span
+              initial={{ y: "115%", opacity: 0 }}
+              animate={{ y: "0%", opacity: 1 }}
+              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.16 }}
+              className="block text-neon-green neon-text-glow"
+            >
+              meets vision.
+            </motion.span>
+          </span>
         </h1>
 
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/50 font-medium mb-12 leading-relaxed text-center">
