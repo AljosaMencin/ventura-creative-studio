@@ -90,10 +90,10 @@ const Navbar = () => {
 
   return (
     <nav className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
       isScrolled ? "bg-black/80 backdrop-blur-md border-b border-white/10" : "bg-transparent"
     )}>
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="layout-container flex items-center justify-between">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -152,12 +152,12 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-6 text-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 text-center overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="z-10"
+        className="layout-container z-10 flex flex-col items-center"
       >
         <div className="mb-6 inline-block px-3 py-1 border border-neon-green/30 bg-neon-green/5 rounded-full">
           <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-neon-green">
@@ -228,8 +228,8 @@ const ValueProp = () => {
   ];
 
   return (
-    <section id="services" className="py-32 px-6 bg-black relative z-10">
-      <div className="max-w-7xl mx-auto">
+    <section id="services" className="py-32 bg-black relative z-10">
+      <div className="layout-container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {pillars.map((pillar, i) => (
             <motion.div
@@ -238,7 +238,7 @@ const ValueProp = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2 }}
-              className="group p-8 glass-card hover:border-neon-green/50 transition-all duration-500"
+              className="group p-8 glass-card hover:border-neon-green/50 transition-all duration-500 text-center flex flex-col items-center"
             >
               <div className="w-12 h-12 bg-neon-green/10 flex items-center justify-center mb-6 group-hover:bg-neon-green group-hover:text-black transition-all duration-300">
                 {pillar.icon}
@@ -259,32 +259,33 @@ const ValueProp = () => {
 
 const DeeperValue = () => {
   return (
-    <section id="philosophy" className="py-32 px-6 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section id="philosophy" className="py-32 relative overflow-hidden">
+      <div className="layout-container grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          className="text-center"
         >
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase italic mb-8 leading-none">
             Built for <span className="text-neon-green">Music Culture.</span>
           </h2>
           <div className="space-y-8">
-            <div className="flex gap-6">
+            <div className="flex flex-col items-center gap-4">
               <div className="flex-shrink-0 w-px h-12 bg-neon-green" />
               <div>
                 <h4 className="text-lg font-bold uppercase tracking-widest mb-2">Not Generic</h4>
                 <p className="text-white/50">Everything is tailored to your specific sound. We don't do templates.</p>
               </div>
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-col items-center gap-4">
               <div className="flex-shrink-0 w-px h-12 bg-neon-green" />
               <div>
                 <h4 className="text-lg font-bold uppercase tracking-widest mb-2">Underground Focus</h4>
                 <p className="text-white/50">Deeply rooted in house, techno, and underground electronic music.</p>
               </div>
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-col items-center gap-4">
               <div className="flex-shrink-0 w-px h-12 bg-neon-green" />
               <div>
                 <h4 className="text-lg font-bold uppercase tracking-widest mb-2">Consistency</h4>
@@ -344,10 +345,10 @@ const Proof = () => {
   ];
 
   return (
-    <section id="work" className="py-32 px-6 bg-black">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-          <div>
+    <section id="work" className="py-32 bg-black">
+      <div className="layout-container">
+        <div className="flex flex-col items-center mb-16 gap-8 text-center">
+          <div className="flex flex-col items-center">
             <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase italic mb-4">
               Selected <span className="text-neon-green">Works.</span>
             </h2>
@@ -375,7 +376,7 @@ const Proof = () => {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-0 left-0 p-8 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+              <div className="absolute bottom-0 inset-x-0 p-8 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 text-center">
                 <span className="text-xs font-bold text-neon-green uppercase tracking-[0.2em] mb-2 block">{project.category}</span>
                 <h3 className="text-2xl font-black uppercase italic text-white">{project.title}</h3>
               </div>
@@ -397,7 +398,7 @@ const Proof = () => {
               role: "Label Head, Void Records"
             }
           ].map((t, i) => (
-            <div key={i} className="p-10 border-l border-neon-green/30 bg-white/5">
+            <div key={i} className="p-10 border border-neon-green/30 bg-white/5 text-center">
               <p className="text-xl text-white/80 italic mb-6">"{t.text}"</p>
               <div>
                 <p className="font-bold uppercase tracking-widest text-neon-green">{t.author}</p>
@@ -413,9 +414,9 @@ const Proof = () => {
 
 const CTA = () => {
   return (
-    <section className="py-40 px-6 text-center relative overflow-hidden">
+    <section className="py-40 text-center relative overflow-hidden">
       <div className="absolute inset-0 bg-neon-green/5 opacity-50" />
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="layout-container max-w-4xl relative z-10">
         <h2 className="text-5xl md:text-8xl font-black tracking-tighter uppercase italic mb-8 leading-none">
           Start realasing GOOD music with <span className="text-neon-green">GOOD visuals.</span>
         </h2>
@@ -433,13 +434,13 @@ const CTA = () => {
 
 const Footer = () => {
   return (
-    <footer className="py-20 px-6 border-t border-white/10 bg-black">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
-        <div className="text-center md:text-left">
+    <footer className="py-20 border-t border-white/10 bg-black">
+      <div className="layout-container flex flex-col items-center gap-12 text-center">
+        <div className="text-center flex flex-col items-center">
           <span className="text-3xl font-black tracking-tighter uppercase italic text-neon-green stretched-text mb-4 block">
             Ventura
           </span>
-          <p className="text-white/40 text-sm max-w-xs">
+          <p className="text-white/40 text-sm max-w-md">
             A movement for artists who care about how their music looks. Based in Berlin. Available worldwide.
           </p>
         </div>
@@ -450,14 +451,14 @@ const Footer = () => {
           <a href="#" className="text-white/60 hover:text-neon-green transition-colors"><Music /></a>
         </div>
 
-        <div className="text-center md:text-right">
+        <div className="text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-white/40 mb-2">Inquiries</p>
           <a href="mailto:hello@ventura.studio" className="text-lg font-bold text-white hover:text-neon-green transition-colors">
             hello@ventura.studio
           </a>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex justify-between items-center text-[10px] uppercase tracking-widest text-white/20">
+      <div className="layout-container mt-20 pt-8 border-t border-white/5 flex flex-col items-center gap-2 text-[10px] uppercase tracking-widest text-white/20 text-center">
         <p>© 2026 Ventura Creative Studio</p>
         <p>All Rights Reserved</p>
       </div>
