@@ -16,6 +16,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { cn } from './lib/utils';
+import innerCircleCover from './assets/inner-circle-cover.png';
 
 // --- Components ---
 
@@ -336,7 +337,7 @@ const DeeperValue = () => {
 
 const Proof = () => {
   const projects = [
-    { title: "Symmetry EP", category: "Cover Art", img: "https://picsum.photos/seed/techno1/800/800" },
+    { title: "Inner Circle Cover", category: "Cover Art", img: innerCircleCover },
     { title: "Void Label", category: "Branding", img: "https://picsum.photos/seed/techno2/800/800" },
     { title: "Berlin Series", category: "Content System", img: "https://picsum.photos/seed/techno3/800/800" },
     { title: "Pulse Vinyl", category: "Packaging", img: "https://picsum.photos/seed/techno4/800/800" },
