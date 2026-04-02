@@ -153,6 +153,27 @@ const Navbar = () => {
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center py-28 md:py-32 text-center overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center motion-reduce:hidden">
+        <motion.div
+          initial={{ opacity: 0.5, scale: 0.2 }}
+          animate={{ opacity: 0, scale: 1.9 }}
+          transition={{ duration: 1.1, ease: "easeOut" }}
+          className="absolute w-[380px] h-[380px] rounded-full border border-neon-green/60"
+        />
+        <motion.div
+          initial={{ opacity: 0.35, scale: 0.3 }}
+          animate={{ opacity: 0, scale: 2.3 }}
+          transition={{ duration: 1.35, ease: "easeOut", delay: 0.08 }}
+          className="absolute w-[380px] h-[380px] rounded-full border border-neon-green/35"
+        />
+        <motion.div
+          initial={{ opacity: 0.22, scale: 0.45 }}
+          animate={{ opacity: 0, scale: 2.7 }}
+          transition={{ duration: 1.6, ease: "easeOut", delay: 0.14 }}
+          className="absolute w-[380px] h-[380px] rounded-full bg-neon-green/10 blur-3xl"
+        />
+      </div>
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
