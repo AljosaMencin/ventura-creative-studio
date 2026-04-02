@@ -483,7 +483,7 @@ const Footer = () => {
     <footer className="py-20 border-t border-white/10 bg-black">
       <div className="layout-container flex flex-col items-center gap-10 text-center">
         <div className="text-center flex flex-col items-center">
-          <span className="text-3xl font-black tracking-tighter uppercase italic text-neon-green stretched-text mb-4 block">
+          <span className="text-3xl font-black tracking-tighter uppercase italic text-neon-green stretched-text origin-center mb-4 block">
             Ventura
           </span>
           <p className="text-white/40 text-sm max-w-md">
