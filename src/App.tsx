@@ -152,29 +152,29 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 text-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center py-28 md:py-32 text-center overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="layout-container z-10 flex flex-col items-center"
+        className="layout-container z-10 w-full max-w-[1200px] flex flex-col items-center justify-center"
       >
-        <div className="mb-6 inline-block px-3 py-1 border border-neon-green/30 bg-neon-green/5 rounded-full">
+        <div className="mb-8 inline-flex items-center justify-center px-3 py-1 border border-neon-green/30 bg-neon-green/5 rounded-full">
           <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-neon-green">
             Visual Identity Studio
           </span>
         </div>
         
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase italic leading-[0.85] mb-8">
+        <h1 className="w-full max-w-[1100px] mx-auto text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase italic leading-[0.85] mb-10 flex flex-col items-center">
           <span className="block text-white">Where sound</span>
-          <span className="block text-neon-green stretched-text neon-text-glow">meets vision.</span>
+          <span className="block text-neon-green neon-text-glow">meets vision.</span>
         </h1>
 
-        <p className="max-w-xl mx-auto text-lg md:text-xl text-white/50 font-medium mb-10 leading-relaxed">
+        <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/50 font-medium mb-12 leading-relaxed text-center">
           Ventura helps artists build clean, high-end visuals that match their sound.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
           <button className="group relative px-8 py-4 bg-neon-green text-black font-bold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95">
             <span className="relative z-10 flex items-center gap-2">
               Start your project <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
